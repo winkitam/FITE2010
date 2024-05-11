@@ -12,7 +12,7 @@ This is a README profile for a ticketing system project built using Web3 and sma
 - `withdraw()`: Allows the contract owner to withdraw the contract balance. The function transfers the contract's balance to the owner's address.
 - `transferOwnership(address newOwner)`: Overrides the transferOwnership function from the Ownable contract to prevent ownership transfer.
 - `transferFrom(address from, address to, uint256 tokenId)`: Overrides the transferFrom function from the ERC721 contract to prevent token transfers.
-- `refund()`: Allows the contract owner to refund all minted NFTs. It checks if there are any NFTs to refund and verifies that the contract balance is sufficient. The function transfers the specified price to each NFT owner, marks the NFTs as no longer owned, and burns the NFTs.
+
 
 ## Web3.js
 The frontend of the ticketing system is built using React and Moralis, a Web3 development platform. The frontend code is located in the app.js and index.js files.
