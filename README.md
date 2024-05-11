@@ -13,13 +13,12 @@ This is a README profile for a ticketing system project built using Web3 and sma
 - `transferOwnership(address newOwner)`: Overrides the transferOwnership function from the Ownable contract to prevent ownership transfer.
 - `transferFrom(address from, address to, uint256 tokenId)`: Overrides the transferFrom function from the ERC721 contract to prevent token transfers.
 
-
 ## Web3.js
 The frontend of the ticketing system is built using React and Moralis, a Web3 development platform. The frontend code is located in the app.js and index.js files.
 - app.js: Initializes the MoralisProvider for connecting to MetaMask.
 - index.js: Handles MetaMask connection status, enabling Web3, and executing contract functions.
 ## Smart Contract
-The NFT ticketing system smart contract is implemented using Solidity and OpenZeppelin libraries. The contract code is located in the MyNFT.sol file. Requirements:
+The NFT ticketing system smart contract is implemented using Solidity and OpenZeppelin libraries. The contract code is located in the MyNFT.sol file. There are a few eequirements:
 - Solidity ^0.8.25
 - OpenZeppelin Contracts: ERC721URIStorage, Counters, Ownable
 
