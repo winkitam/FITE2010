@@ -8,16 +8,16 @@ This is a README profile for a ticketing system project built using Web3 and sma
 5. You will see a`Connect` button on the ticketing system page. Click it to connect your Ethereum account.
 6. Once connected, you can execute the contract functions through the ticketing system interface.
 ## Feature
-- Mint NFT: Users can mint NFTs by paying the specified price as set by the contract owner.
-- Set Maximum NFTs: The contract owner can set the maximum number of NFTs that can be minted.
-- Withdraw: The contract owner can withdraw the contract balance.
-- Refund NFTs: The contract owner can refund NFTs to users, transferring the refund amount and burning the NFTs.
-- Frondend application: The frontend application interacts with the contract functions by connecting to MetaMask. Users can connect their MetaMask wallet to the application and execute contract functions such as minting NFTs and refunding NFTs.
+- `mintNFT()`: Allows users to mint NFTs by paying the specified price. It checks if the maximum number of NFTs has been reached, ensures that the user hasn't already minted an NFT, and verifies that the payment is sufficient. The function mints the NFT, assigns it to the user, sets the token URI, and increments the token ID.
+- `withdraw()`: Allows the contract owner to withdraw the contract balance. The function transfers the contract's balance to the owner's address.
+- `transferOwnership(address newOwner)`: Overrides the transferOwnership function from the Ownable contract to prevent ownership transfer.
+- `transferFrom(address from, address to, uint256 tokenId)`: Overrides the transferFrom function from the ERC721 contract to prevent token transfers.
+- `refund()`: Allows the contract owner to refund all minted NFTs. It checks if there are any NFTs to refund and verifies that the contract balance is sufficient. The function transfers the specified price to each NFT owner, marks the NFTs as no longer owned, and burns the NFTs.
+
 ## Web3.js
 The frontend of the ticketing system is built using React and Moralis, a Web3 development platform. The frontend code is located in the app.js and index.js files.
 - app.js: Initializes the MoralisProvider for connecting to MetaMask.
 - index.js: Handles MetaMask connection status, enabling Web3, and executing contract functions.
-Getting Started
 ## Smart Contract
 The NFT ticketing system smart contract is implemented using Solidity and OpenZeppelin libraries. The contract code is located in the MyNFT.sol file. Requirements:
 - Solidity ^0.8.25
