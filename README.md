@@ -22,6 +22,7 @@ Getting Started
 The NFT ticketing system smart contract is implemented using Solidity and OpenZeppelin libraries. The contract code is located in the MyNFT.sol file.
 Requirements: Solidity ^0.8.25
 OpenZeppelin Contracts: ERC721URIStorage, Counters, Ownable
+
 ## Smart Contract Function
 - mintNFT: Allows users to mint NFTs by paying the specified price.
 - setMaxNFTs: Sets the maximum number of NFTs that can be minted.
@@ -31,10 +32,10 @@ OpenZeppelin Contracts: ERC721URIStorage, Counters, Ownable
 
 To deploy and interact with the contract, follow these steps:
 ## Get Started
-Deploy the contract on the Ethereum blockchain using a tool like Remix or Truffle.
-Install the required dependencies for the frontend application.
-Update the contract address and function details in the frontend code.
-Run the frontend application and connect your MetaMask wallet.
+1. Deploy the contract on the Ethereum blockchain using a tool like Remix or Truffle.
+2. Install the required dependencies for the frontend application.
+3. Update the contract address and function details in the frontend code.
+4. Run the frontend application and connect your MetaMask wallet.
 ## License
 The NFT ticketing system project is licensed under the MIT License.
 ## User Interface
