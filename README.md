@@ -19,9 +19,9 @@ The frontend of the ticketing system is built using React and Moralis, a Web3 de
 - index.js: Handles MetaMask connection status, enabling Web3, and executing contract functions.
 Getting Started
 ## Smart Contract
-The NFT ticketing system smart contract is implemented using Solidity and OpenZeppelin libraries. The contract code is located in the MyNFT.sol file.
-Requirements: Solidity ^0.8.25
-OpenZeppelin Contracts: ERC721URIStorage, Counters, Ownable
+The NFT ticketing system smart contract is implemented using Solidity and OpenZeppelin libraries. The contract code is located in the MyNFT.sol file. Requirements:
+- Solidity ^0.8.25
+- OpenZeppelin Contracts: ERC721URIStorage, Counters, Ownable
 
 ## Smart Contract Function
 - mintNFT: Allows users to mint NFTs by paying the specified price.
