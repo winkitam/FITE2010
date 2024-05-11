@@ -1,12 +1,10 @@
 # ConcertTicketPro
 This is a README profile for a ticketing system project built using Web3 and smart contracts. The goal of this project is to create a `decentralized ticketing system` that allows event organisers to create and sell unique NFT ticketstickets securely and transparently. The NFT tickets are non-transferable and tied to the purchaser's wallet address, ensuring secure ownership and preventing fraud.
 ## Usage
-1. Start the frontend development server: ``npm start``
-2. Open your web browser and access the ticketing system at http://localhost:3000
-3. If MetaMask is not installed, please install it before proceeding.
-4. Connect MetaMask to your Ethereum account.
-5. You will see a`Connect` button on the ticketing system page. Click it to connect your Ethereum account.
-6. Once connected, you can execute the contract functions through the ticketing system interface.
+1. If MetaMask is not installed, please install it before proceeding.
+2. Connect MetaMask to your Ethereum account.
+3. You will see a`Connect` button on the ticketing system page. Click it to connect your Ethereum account.
+4. Once connected, you can execute the contract functions through the ticketing system interface.
 ## Feature
 - `mintNFT()`: Allows users to mint NFTs by paying the specified price. It checks if the maximum number of NFTs has been reached, ensures that the user hasn't already minted an NFT, and verifies that the payment is sufficient. The function mints the NFT, assigns it to the user, sets the token URI, and increments the token ID.
 - `withdraw()`: Allows the contract owner to withdraw the contract balance. The function transfers the contract's balance to the owner's address.
