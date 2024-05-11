@@ -30,7 +30,6 @@ The NFT ticketing system smart contract is implemented using Solidity and OpenZe
 - refund: Allows the contract owner to refund NFTs to users.
 - transferOwnership: Overrides the transferOwnership function to restrict ownership transfer.
 
-To deploy and interact with the contract, follow these steps:
 ## Get Started
 1. Deploy the contract on the Ethereum blockchain using a tool like Remix or Truffle.
 2. Install the required dependencies for the frontend application.
