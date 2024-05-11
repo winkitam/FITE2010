@@ -1,8 +1,12 @@
 # ConcertTicketPro
-This is a README profile for a ticketing system project built using Web3 and smart contracts. The goal of this project is to create a `decentralized ticketing system` that allows users to purchase, sell, and verify tickets securely and transparently.
+This is a README profile for a ticketing system project built using Web3 and smart contracts. The goal of this project is to create a `decentralized ticketing system` that allows event organisers to create and sell unique NFT ticketstickets securely and transparently. The NFT tickets are non-transferable and tied to the purchaser's wallet address, ensuring secure ownership and preventing fraud.
 ## Usage
-Concert and event organisers are able to utilize our ticketing system
-- All tickets include private information such as private
+1. Start the frontend development server: npm start
+2. Open your web browser and access the ticketing system at http://localhost:3000
+3. If MetaMask is not installed, please install it before proceeding.
+4. Connect MetaMask to your Ethereum account.
+5. You will see a "Connect" button on the ticketing system page. Click it to connect your Ethereum account.
+6. Once connected, you can execute the contract functions through the ticketing system interface.
 ## Feature
 - Mint NFT: Users can mint NFTs by paying the specified price as set by the contract owner.
 Set Maximum NFTs: The contract owner can set the maximum number of NFTs that can be minted.
@@ -10,6 +14,10 @@ Set Maximum NFTs: The contract owner can set the maximum number of NFTs that can
 - Refund NFTs: The contract owner can refund NFTs to users, transferring the refund amount and burning the NFTs.
 - Frondend application: The frontend application interacts with the contract functions by connecting to MetaMask. Users can connect their MetaMask wallet to the application and execute contract functions such as minting NFTs and refunding NFTs.
 ## Web3.js
+## Smart Contract
+The NFT ticketing system smart contract is implemented using Solidity and OpenZeppelin libraries. The contract code is located in the MyNFT.sol file.
+Requirements: Solidity ^0.8.25
+OpenZeppelin Contracts: ERC721URIStorage, Counters, Ownable
 ## Smart Contract Function
 - mintNFT: Allows users to mint NFTs by paying the specified price.
 - setMaxNFTs: Sets the maximum number of NFTs that can be minted.
@@ -26,4 +34,5 @@ Deploy the contract on the Ethereum blockchain using a tool like Remix or Truffl
 Install the required dependencies for the frontend application.
 Update the contract address and function details in the frontend code.
 Run the frontend application and connect your MetaMask wallet.
-
+## License
+The NFT ticketing system project is licensed under the MIT License.
