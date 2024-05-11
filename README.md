@@ -3,8 +3,10 @@ This is a README profile for a ticketing system project built using Web3 and sma
 ## Usage
 1. If MetaMask is not installed, please install it before proceeding.
 2. Connect MetaMask to your Ethereum account.
-3. You will see a`Connect` button on the ticketing system page. Click it to connect your Ethereum account.
-4. Once connected, you can execute the contract functions through the ticketing system interface.
+3. Click in the ticket system link: https://fite-project.vercel.app/
+4. You will see a`Connect` button on the ticketing system page. Click it to connect your Ethereum account.
+5. Once connected, you can execute the contract functions through the ticketing system interface.
+
 ## Feature
 - `mintNFT()`: Allows users to mint NFTs by paying the specified price. It checks if the maximum number of NFTs has been reached, ensures that the user hasn't already minted an NFT, and verifies that the payment is sufficient. The function mints the NFT, assigns it to the user, sets the token URI, and increments the token ID.
 - `withdraw()`: Allows the contract owner to withdraw the contract balance. The function transfers the contract's balance to the owner's address.
