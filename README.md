@@ -9,7 +9,7 @@ This is a README profile for a ticketing system project built using Web3 and sma
 6. Once connected, you can execute the contract functions through the ticketing system interface.
 ## Feature
 - Mint NFT: Users can mint NFTs by paying the specified price as set by the contract owner.
-Set Maximum NFTs: The contract owner can set the maximum number of NFTs that can be minted.
+- Set Maximum NFTs: The contract owner can set the maximum number of NFTs that can be minted.
 - Withdraw: The contract owner can withdraw the contract balance.
 - Refund NFTs: The contract owner can refund NFTs to users, transferring the refund amount and burning the NFTs.
 - Frondend application: The frontend application interacts with the contract functions by connecting to MetaMask. Users can connect their MetaMask wallet to the application and execute contract functions such as minting NFTs and refunding NFTs.
